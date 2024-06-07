@@ -1,15 +1,18 @@
 import React from "react";
-import { RouterProvider } from "react-router-dom";
-
-import router from "../routes/routes";
-
+import { CartProvider } from "./CartContext";
 import "./App.css";
-
-
+import Router from "../routes/RoutePath";
+import StairTransition from "./components/animation/StairTransition";
+import PageTransition from "./components/animation/PageTransition";
 const App = () => {
   return (
     <>
-      <RouterProvider router={router} />
+      <StairTransition />
+      <PageTransition>
+        <CartProvider>
+          <Router />
+        </CartProvider>
+      </PageTransition>
     </>
   );
 };

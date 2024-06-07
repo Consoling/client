@@ -9,9 +9,9 @@ import {Image} from 'mui-image'
 const CheckoutContent = () => {
   return (
     <div>
-      <Stack sx={{width:'100%', height:'150vh'}}>
-    <Stack sx={{display:'flex',marginTop:'60px',marginRight:'30px', marginLeft:'30px'}} >
-     <Stack sx={{display:'flex',flexDirection:'row',justifyContent:'start', alignItems:'center', fontFamily:'Poppins'}}>
+      <Stack sx={{width:'100%', height:'100vh', }}>
+    <Stack sx={{display:'flex',marginTop:'60px',marginRight:'60px', marginLeft:'60px'}} >
+     <Stack sx={{display:'flex',flexDirection:'row',justifyContent:'', alignItems:'center', fontFamily:'Poppins'}}>
        <Typography sx={{paddingRight:'4px', gap:'3', color:'gray',fontFamily:'Poppins'}} variant='subtitle1' >
          Home /
        </Typography>
@@ -114,6 +114,8 @@ const CheckoutContent = () => {
         $1750
        </Typography>
        </Stack>
+
+       
       
 
        <Stack sx={{display:'flex', flexDirection:'row',marginLeft:'20px',marginRight:'20px' }}>
